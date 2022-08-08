@@ -222,7 +222,6 @@ h2{
     margin-left: auto;
     margin-right: auto;
 
-   
 }
 
 .parrafoly{
@@ -313,6 +312,151 @@ footer{
 
 /* MEDIA QUERIE */
 
+@media only screen and (max-width:1200p){
+
+
+/* inicio */
+
+section{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "a1 a2"
+                            "a3 a4"
+                            "a5 a6"
+                            "a7 a8";
+    grid-gap: 5px;
+    align-items: end;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+}
+
+/* NOTICIA 1*/
+
+
+#foto1{
+    
+    width: 250px;
+    height: 90%;
+    grid-area: a1;
+    
+}
+
+#noti1{
+    grid-area: a2;
+    border: 1px dotted;
+    border-radius: 4px;
+}
+
+/* NOTICIA 2*/
+
+
+#foto2{
+    
+    width: 250px;
+    height: 90%;
+    grid-area: a3;
+}
+
+#noti2{
+
+    grid-area: a4;
+    border: 1px dotted;
+    border-radius: 4px;
+}
+
+/* NOTICIA 3 */
+
+
+#foto3{
+    
+    width: 250px;
+    height: 90%;
+    grid-area: a5;
+}
+
+#noti3{
+    grid-area: a6;
+    border: 1px dotted;
+    border-radius: 4px;
+    
+}
+
+/* NOTICIA 4 */
+
+
+#foto4{
+    
+    width: 250px;
+    height: 90%;
+    grid-area: a7;
+}
+
+#noti4{
+    grid-area: a8;
+    border: 1px dotted;
+    border-radius: 4px;
+}
+
+/* LEYENDAS */
+
+
+.grid_ly{
+    
+    display: flex;
+    opacity: 0.6;
+    font-size: large;
+    text-align: center;
+    justify-content: space-around;
+    height: 1000px;
+    width: 100%;
+}
+
+.ly1{
+    align-items: center;
+    width: 65%;
+
+}
+
+
+.tituloly{
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    color:red;
+    background-color: black;
+    
+} 
+
+.imgly{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    margin: 1%;
+    margin-left: auto;
+    margin-right: auto;
+
+   
+}
+
+.parrafoly{
+    
+    float: inline-end;
+    text-align: justify;
+    margin: 5%;
+    height: 100%;
+    
+}
+
+}
+
+
+
+
+
 @media only screen and (max-width:600px){
 
 /* INICIO */
@@ -392,6 +536,7 @@ footer{
         color: rgb(255, 232, 181);
         background-color: black;
         height: 100%;
+        width: 100%;
         
     }
 
@@ -404,6 +549,7 @@ footer{
 
     .tituloly{
         text-decoration: underline;
+        font-size: 20px;
     }
     
     .imgly{
